@@ -121,7 +121,6 @@ code {
 	line-height: 1.1;
 	background-color: var(--arm_light_gray2);
 	border-radius: 6px;
-	padding: 0.2em 0.4em;
 }
 
 /*  Tables */
@@ -145,21 +144,24 @@ td.cmtab1 {
 }
 
 table.cmtable {
-	border-collapse:collapse;
-	text-align: justify;
+        border-collapse:collapse;
+        margin-top: 4px;
+        margin-bottom: 4px;
 }
 
 table.cmtable td, table.cmtable th {
-	border: 1px solid var(--arm_dark_gray);
-	padding: 3px 7px 2px;
+       border: 1px solid var(--arm_light_gray);
+       padding: 7px 10px 5px;
+       text-align:left;
 }
 
 table.cmtable th {
-	background-color: var(--arm_light_gray3);
-	font-size: 100%;
-	padding-bottom: 4px;
-	padding-top: 5px;
-	text-align:left;
+       background-color: var(--arm_blue);
+       color: white;
+}
+
+table.cmtable tr:nth-child(even) {
+       background-color: var(--arm_light_gray3);
 }
 
 td.MonoTxt {
@@ -391,7 +393,7 @@ div.fragment {
 
 div.line {
 	font-family: monospace;
-	font-size: 100%;
+        font-size: 100%;
 	line-height: 1.45;
 	text-wrap: unrestricted;
 	white-space: -moz-pre-wrap; /* Moz */
@@ -1025,6 +1027,20 @@ table.markdownTable tr:nth-child(even) {
        background-color: var(--arm_light_gray3);
 }
 
+/* for hyperlinks in table head rows */
+table.markdownTable th a{
+       color: white;
+       text-decoration: underline;
+}
+
+table.markdownTable th a:visited{
+       color: white;
+}
+
+table.markdownTable th a:hover{
+       color: var(--arm_yellow);
+}
+
 /* @end */
 
 
@@ -1207,7 +1223,7 @@ dl.section dd {
 #projectlogo
 {
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 	border-collapse: separate;
 }
 
@@ -1252,7 +1268,11 @@ dl.section dd {
 
 .image
 {
-        text-align: center;
+        text-align: left;
+        display: grid;
+        justify-content: start;
+        align-items: baseline;
+        justify-items: center;
 }
 
 .dotgraph
@@ -1268,6 +1288,7 @@ dl.section dd {
 .caption
 {
 	font-weight: bold;
+	font-size: 80%;
 }
 
 div.zoom

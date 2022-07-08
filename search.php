@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IoT Socket: Reference</title>
+<title>IoT Socket: Search</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,40 +74,11 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
 </div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('modules.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
-<div class="header">
-  <div class="headertitle"><div class="title">Reference</div></div>
-</div><!--header-->
-<div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9658;</span><a class="el" href="group__iotSocketMacros.html" target="_self">IoT Socket Macros</a></td><td class="desc">List of IoT Socket macros </td></tr>
-<tr id="row_0_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketAddressFamily.html" target="_self">IoT Socket Address Family</a></td><td class="desc">Address Family definitions </td></tr>
-<tr id="row_0_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketType.html" target="_self">IoT Socket Type</a></td><td class="desc">Socket Type definitions </td></tr>
-<tr id="row_0_2_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketProtocol.html" target="_self">IoT Socket Protocol</a></td><td class="desc">Socket Protocol definitions </td></tr>
-<tr id="row_0_3_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketOptions.html" target="_self">IoT Socket Options</a></td><td class="desc">Socket Option definitions </td></tr>
-<tr id="row_0_4_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketReturnCodes.html" target="_self">IoT Socket Return Codes</a></td><td class="desc">Socket Return Codes </td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketAPI.html" target="_self">IoT Socket API Functions</a></td><td class="desc">List of IoT Socket API functions </td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__iotSocketMux.html" target="_self">IoT Socket Multiplexer API</a></td><td class="desc">List of APIs specific to IoT Socket Multiplexer </td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<?php
+require_once "search_functions.php";
+main();
+?>
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
